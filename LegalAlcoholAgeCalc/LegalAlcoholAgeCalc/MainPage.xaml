@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LegalAlcoholAgeCalc.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Legal Drinking Age Calculator" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Remaining Years until you are able to legally Drink" HorizontalTextAlignment="Center" FontSize="Medium" />
+        <Label x:Name="Out_Years" FontSize="Medium" FontAttributes="Bold" Text="Loading" HorizontalTextAlignment="Center" />
+
+        <Label Text="Please Enter your date of Birth" HorizontalOptions="Center" FontSize="Medium" />
+        <DatePicker HorizontalOptions="Center" x:Name="DateOfBirth" />
+
+        <Button Clicked="Button_Clicked" Text="Click this Button to check legal drinking Age"/>
+    </StackLayout>
+
+</ContentPage>
